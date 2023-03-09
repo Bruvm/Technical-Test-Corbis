@@ -1,0 +1,71 @@
+<div class="row my-2">
+    <div class="col">
+        <div class="logo">
+            Jones Arc.
+        </div>
+    </div>
+    <div class="col">
+        <div class="action">
+            <div class="search">
+                <input type="search" placeholder="search projects, clients, staff and more">
+            </div>
+            <div class="btn btn-outline-orange">
+                <i class="bi bi-plus-circle"></i>
+            </div>
+            <div class="btn btn-outline-grey">
+                <i class="bi bi-clock"></i>
+            </div>
+            <div class="profile">
+                <div class="profile-picture">
+                    <img src={{user.img}} alt="">
+                </div>
+
+                <div ngbDropdown class="d-inline-block">
+                    <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                        {{user.name}}
+                    </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem>Option 1</button>
+                        <button ngbDropdownItem>Option 2</button>
+                        <button ngbDropdownItem>Option 3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btn btn-outline-grey">
+                <i class="bi bi-question-circle"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+        <li [ngbNavItem]="1">
+            <a ngbNavLink>BALANCE COMPANY SCORE<i class="bi bi-caret-right-fill"></i></a>
+            <ng-template ngbNavContent>
+                <p>
+                    Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                    salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                </p>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+            <a ngbNavLink>Stategy Maps</a>
+            <ng-template ngbNavContent>
+                <div class="picture">
+
+                </div>
+                <h5>STM 2019</h5>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+            <a ngbNavLink>KPI</a>
+            <ng-template ngbNavContent>
+            </ng-template>
+        </li>
+    </ul>
+    
+    <div [ngbNavOutlet]="nav" class=""></div>
+
+</div>
