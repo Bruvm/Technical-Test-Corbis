@@ -33,8 +33,7 @@ export class AsideComponent implements OnInit {
 			.subscribe(response => {
 				const parseResponse: StrategyMaps = new Object(response) as StrategyMaps;
 				this.comments = parseResponse.comments
-        this.notifications = parseResponse.comments.length
-				console.log('holaa',parseResponse.comments.length)
+        		this.notifications = parseResponse.comments.length
 			});
 	}
 
