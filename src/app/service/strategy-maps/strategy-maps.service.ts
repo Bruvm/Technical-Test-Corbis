@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ObjectivesService {
+export class StrategyMapsService {
 
   constructor(private http: HttpClient) { }
   public get(url:string){
