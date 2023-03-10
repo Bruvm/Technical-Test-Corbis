@@ -1,0 +1,62 @@
+<div class="commentsPane">
+    <div class="actions">
+        <div class="row">
+            <div class="col ">
+                <input type="text" placeholder="Make a comment">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col text-end mt-2">
+                <button class="btn btn-darkgrey me-1">Cancel</button>
+                <button class="btn btn-outline-darkgrey">Submit</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="comments" *ngFor="let comment  of comments">
+        <div class="row">
+            <div class="col-12">
+                <div class="user-information">
+                    <div class="col col-img me-3">
+                        <div class="profile-img ">
+                            <img [src]="comment.image ? comment.image : genericImage" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="profile-data">
+                            <h5>{{comment.author}}</h5>
+                            <small>{{comment.date | date:'medium'}}</small>
+                        </div>
+                    </div>
+                    <div class="col text-end">
+                        <div class="resolve buttonActive">
+                            <button class="btn btn-darkgrey btn-bold  px-0">Resolve</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row comment">
+                    <p>{{comment.comment}}</p>
+                </div>
+                <div class="row action">
+                    <div class="col">
+                        <button class="btn btn-darkgrey btn-bold px-0">Reply</button>
+                    </div>
+                    <div class="col text-end ">
+                        <div class="buttonActive">
+                            <button class="btn btn-darkgrey me-1 "><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-darkgrey buttonActive"><i class="bi bi-trash3"></i></button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
