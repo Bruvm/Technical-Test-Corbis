@@ -1,0 +1,41 @@
+.table-container {
+    overflow-x: auto;
+}
+
+.table-container::-webkit-scrollbar {
+    height: 5px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #4C4743;
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.table-container .table {
+    overflow-y: scroll;
+}
+
+.table-container .table thead {
+    background: white;
+}
+
+.table-container .table thead tr th {
+    border-left: 1px solid #CCCCCC;
+}
+
+.table-container .table thead tr :first-child {
+    border-left: none;
+}
+
+.table-container .table .dropdown-toggle::after {
+    display: none;
+}

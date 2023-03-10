@@ -1,0 +1,40 @@
+<div class="table-container my-3" >
+	<table class="table table-striped mb-1" *ngIf="objectives">
+		<thead>
+			<tr>
+				<th scope="col" sortable="objective">OBJECTIVE</th>
+				<th scope="col" sortable="perspectives">PERSPECTIVE</th>
+				<th scope="col" sortable="owner">OWNER</th>
+				<th scope="col" sortable="description">DESCRIPTION</th>
+				<th scope="col" sortable="detail"><i class="bi bi-three-dots-vertical"></i></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let objective of objectives | slice: (page-1)*pageSize : (page-1)*pageSize + pageSize">
+				<td>{{ objective.code }} Objective</td>
+				<td>{{objective.perspective.name}}</td>
+				<td>{{objective.name}}</td>
+				<td>{{objective.description}}</td>
+				<td>
+					<div ngbDropdown class="d-inline-block">
+						<button type="button" class="btn" id="detail" ngbDropdownToggle>
+							<i class="bi bi-three-dots"></i>
+						</button>
+						<div ngbDropdownMenu aria-labelledby="detail">
+							<button ngbDropdownItem>Details</button>
+						</div>
+					</div>
+	
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<ngb-pagination  [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize"  class="d-flex justify-content-end pe-3">
+
+	<ng-template ngbPaginationPrevious>Previous</ng-template>
+	<ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+	<ng-template ngbPaginationNext>Next</ng-template>
+
+	
+  </ngb-pagination>
