@@ -1,0 +1,73 @@
+.pane{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1F1F1;
+
+}
+.nav-link{
+    color: #FF6537;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-link.active{
+    color: #707070;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tab-content{
+    background: white;
+}
+
+.pane .search .input-container{
+    position: relative;
+    width: 200px;
+}
+.pane .search .input-container i{
+   position: absolute;
+   color: #BEBEBE;
+   font-size: 12px;
+}
+.pane .search .input-container .firstIcon{
+   top: 8px;
+   left: 10px;
+}
+.pane .search .input-container .lastIcon{
+   top: 8px;
+   right: 10px;
+}
+.pane .search input {
+   width: 200px;
+   background-color: #FFFFFF;
+   border: 1px solid #CCCCCC;
+   font-size: 12px;
+   padding: 7px 30px 7px 15px;
+   
+}
+.pane .search input:focus{
+   outline: 1px solid #555555;
+}
+
+.tabPane{
+    overflow: auto;
+    max-height: calc(100vh - 159px);
+    width: 100%;
+    margin-right: 25px;
+}
+
+.tabPane::-webkit-scrollbar {
+    width: 5px;
+}
+
+.tabPane::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+
+.tabPane::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.tabPane::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}

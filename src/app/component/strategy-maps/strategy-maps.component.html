@@ -1,0 +1,55 @@
+<div class="pane pe-0 ">
+
+    <div class="tabPane px-3 pt-4 bg-grey">
+        <div class="d-flex">
+            <div ngbDropdown class="d-inline-block">
+                <div class="btn-group me-3">
+                    <span class="btn-icon-orange btn-icon"><i class="bi bi-plus-lg"></i></span>
+                    <button type="button" class="btn btn-orange" id="dropdownBasic1" ngbDropdownToggle>
+                        Add New KP
+                    </button>
+                </div>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Option 1</button>
+                    <button ngbDropdownItem>Option 2</button>
+                    <button ngbDropdownItem>Option 3</button>
+                </div>
+            </div>
+            <div class="search">
+                <div class="input-container">
+                    <input type="search" placeholder="search">
+                    <i class="bi bi-search lastIcon"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row mt-4 shadow" >
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                <li [ngbNavItem]="1">
+                    <a ngbNavLink disabled>Perspectives</a>
+                    <ng-template ngbNavContent>
+                        <app-perspectives></app-perspectives>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                    <a ngbNavLink>Objetives</a>
+                    <ng-template ngbNavContent>
+                       
+                        <app-objectives></app-objectives>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="3" [disabled]="disabled">
+                    <a ngbNavLink >KPIs</a>
+                    <ng-template ngbNavContent>
+                    </ng-template>
+                </li>
+            </ul>
+            
+            <div [ngbNavOutlet]="nav" class=""></div>
+        </div>
+    </div>
+    <div class="">
+        <app-aside></app-aside>
+    </div>
+
+</div>
