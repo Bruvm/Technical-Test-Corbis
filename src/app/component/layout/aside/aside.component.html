@@ -1,0 +1,31 @@
+<div class="aside">
+    <div class="buttons">
+        <div class="comment">
+            <ul>
+                <li [class]="commentPane ? 'active' : ''" (click)="showComment()">
+                    <button class="btn ">
+                        <span class="circle">
+                            {{notifications}}
+                        </span>
+                        <i class="bi bi-chat-left-fill"></i>
+                    </button>
+                </li>
+    
+            </ul>
+        </div>
+        <div class="filter">
+            <ul>
+                <li>
+                    <button class="btn ">
+       
+                        <i class="bi bi-funnel-fill"></i>
+                    </button>
+                </li>
+    
+            </ul>
+        </div>
+    </div>
+    
+
+    <app-comments *ngIf="commentPane" [comments]="comments"></app-comments>
+</div>

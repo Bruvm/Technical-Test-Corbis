@@ -1,0 +1,15 @@
+
+.table thead{
+    background: white;
+}
+.table thead tr th{
+    border-left: 1px solid #CCCCCC;
+    font-size: 12px;
+}
+.table thead tr :first-child{
+    border-left: none;
+}
+
+.table .dropdown-toggle::after{
+display: none;
+}
