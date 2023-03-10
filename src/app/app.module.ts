@@ -8,6 +8,15 @@ import { LayoutComponent } from './component/layout/layout.component';
 import { NavbarComponent } from './component/layout/navbar/navbar.component';
 import { SidebarComponent } from './component/layout/sidebar/sidebar.component';
 import { AsideComponent } from './component/layout/aside/aside.component';
+import { StrategyMapsComponent } from './component/strategy-maps/strategy-maps.component';
+import { PerspectivesComponent } from './component/strategy-maps/perspectives/perspectives.component';
+import { ObjectivesComponent } from './component/strategy-maps/objectives/objectives.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DecimalPipe, NgFor } from '@angular/common';
+import { CommentsComponent } from './component/comments/comments.component';
+import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @NgModule({
   declarations: [
@@ -15,12 +24,19 @@ import { AsideComponent } from './component/layout/aside/aside.component';
     LayoutComponent,
     NavbarComponent,
     SidebarComponent,
-    AsideComponent
+    AsideComponent,
+    StrategyMapsComponent,
+    PerspectivesComponent,
+    ObjectivesComponent,
+    CommentsComponent,
+
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgbPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

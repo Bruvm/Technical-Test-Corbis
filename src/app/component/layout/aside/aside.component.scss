@@ -1,0 +1,80 @@
+.aside{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.aside .buttons {
+    width: 45px;
+    min-height: calc(100vh - 159px);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside .buttons .comment {
+    padding-top: 30px;
+}
+
+.aside .buttons .comment ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+
+.aside .buttons .comment ul li.active {
+    background-color: #BBBBBB;
+    color: #4C4743;
+    border: none;
+}
+
+.aside .buttons .comment ul li .btn {
+    color: #4C4743;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border-radius: 0;
+    position: relative;
+    padding: 8px 3px 3px;
+}
+
+
+
+.aside .buttons .comment ul li .btn .circle {
+    position: absolute;
+    background-color: #FF6537;
+    border: 1px solid #E8E8E8;
+    color: #E8E8E8;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    top: 2px;
+    right: 0;
+}
+
+
+.aside .buttons .filter{
+    padding-bottom: 130px;
+}
+.aside .buttons .filter ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.aside .buttons .filter ul li .btn {
+    color: #4C4743;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border-radius: 0;
+
+    padding: 3px;
+}

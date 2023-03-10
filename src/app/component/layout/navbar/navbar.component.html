@@ -1,13 +1,18 @@
-<div class="row my-2">
-    <div class="col">
+<div class="row px-3 py-2">
+    <div class="col-md col-12 mb-md-0 mb-2">
         <div class="logo">
             Jones Arc.
         </div>
     </div>
-    <div class="col">
+    <div class="col-md col-12 ">
         <div class="action">
             <div class="search">
-                <input type="search" placeholder="search projects, clients, staff and more">
+                <div class="input-container">
+                    <i class="bi bi-caret-down-fill firstIcon"></i>
+                    <input type="search" placeholder="search projects, clients, staff and more">
+                    <i class="bi bi-search lastIcon"></i>
+                </div>
+                
             </div>
             <div class="btn btn-outline-orange">
                 <i class="bi bi-plus-circle"></i>
@@ -37,17 +42,11 @@
         </div>
     </div>
 </div>
-<div>
+<div class="row">
     <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-        <li [ngbNavItem]="1">
-            <a ngbNavLink>BALANCE COMPANY SCORE<i class="bi bi-caret-right-fill"></i></a>
+        <li [ngbNavItem]="1" [disabled]="disabled">
+            <a ngbNavLink disabled>BALANCE COMPANY SCORE<i class="bi bi-caret-right-fill"></i></a>
             <ng-template ngbNavContent>
-                <p>
-                    Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                    master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-                    salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
-                </p>
             </ng-template>
         </li>
         <li [ngbNavItem]="2">
@@ -57,10 +56,11 @@
 
                 </div>
                 <h5>STM 2019</h5>
+                
             </ng-template>
         </li>
-        <li [ngbNavItem]="3">
-            <a ngbNavLink>KPI</a>
+        <li [ngbNavItem]="3" [disabled]="disabled">
+            <a ngbNavLink disabled>KPI</a>
             <ng-template ngbNavContent>
             </ng-template>
         </li>

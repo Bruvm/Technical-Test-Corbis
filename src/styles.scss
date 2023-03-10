@@ -4,16 +4,90 @@
 @import '~bootstrap/scss/bootstrap';
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+.btn {
+    border-radius: 0;
+}
+.btn:active {
+    border: 1px solid white !important;
+}
 
+.bg-grey {
+    background-color: #F1F1F1;
+}
 
-.btn-outline-orange{
+.btn-orange {
+    background-color: #FF6537;
+    border: 1px solid #FF6537;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.btn-orange:hover {
+    background-color: #af4a2b;
+    border: 1px solid #af4a2b;
+    color: #FFFFFF;
+}
+
+.btn-icon-orange {
+    background-color: #EB4716;
+    border: 1px solid #EB4716;
+    color: #FFFFFF;
+    padding: 4px 9px;
+}
+.btn-orange:active {
+    background-color: #af4a2b !important;
+    border: 1px solid #af4a2b !important;
+    color: #FFFFFF;
+}
+
+.btn-outline-orange {
     color: #FF6537
 }
-.btn-outline-grey{
+
+.btn-outline-grey {
     color: #D2D2D2
 }
-*{
+
+.btn-darkgrey {
+    color: #515251;
+    border: none;
+}
+
+.btn-darkgrey:hover {
+    color: #222222;
+}
+
+.btn-outline-darkgrey {
+    color: #515251;
+    border: 1px solid #BABBBA
+}
+
+.btn-outline-darkgrey:hover {
+    color: #404040;
+    background-color: #f5f5f5;
+}
+
+.btn-bold {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+
+* {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
+
+.page-link.active, .active > .page-link{
+    background-color: #FF6537;
+    border: 1px solid #CCCBCB;
+}
+.page-link{
+    color: #FF6537;
+}
+.page-link:hover{
+    color: #9b3c1f;
+}
+

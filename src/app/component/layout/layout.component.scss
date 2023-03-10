@@ -1,3 +1,7 @@
-
-
+.col-sidebar{
+    max-width: 60px;
+}
+.col-body{
+    width: calc(100vw - 60px);
+}
 
