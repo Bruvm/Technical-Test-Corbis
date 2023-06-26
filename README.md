@@ -1,7 +1,6 @@
 # TechnicalTest
 Challenge performed for technical test in Corbis.
 
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 **We use NPM package manager to manage the dependencies that we use in the projects**
